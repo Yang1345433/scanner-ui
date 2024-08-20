@@ -1,0 +1,30 @@
+{
+  "name": "scanner-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "api-generate": "npx swagger-typescript-api -p https://scanner.scysn.cn/api/v3/api-docs -o ./src/api --axios --modular --module-name-index 1 --single-http-client"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.6.8",
+    "element-plus": "^2.6.3",
+    "pinia": "^2.1.7",
+    "three": "^0.163.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.3",
+    "@types/three": "^0.163.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.74.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
